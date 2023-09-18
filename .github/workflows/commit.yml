@@ -34,7 +34,6 @@ jobs:
           git remote add codecommit https://git-codecommit.us-east-1.amazonaws.com/v1/repos/app
           git config credential.helper '!aws codecommit credential-helper $@'
           git config credential.UseHttpPath true
-          git checkout -b master
           git pull codecommit master
           git push codecommit master
 
