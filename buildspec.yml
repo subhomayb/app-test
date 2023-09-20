@@ -1,14 +1,9 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 14
-    commands:
-      - echo "Install phase: Use this for setup (if needed)."
-
   build:
     commands:
+      - echo "Performing Git operations"
       - git clone https://github.com/subhomayb/app-test.git
       - cd app-test
       - git remote add codecommit https://git-codecommit.us-west-1.amazonaws.com/v1/repos/cicd-github
